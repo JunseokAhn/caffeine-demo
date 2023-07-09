@@ -22,4 +22,9 @@ public class Controller {
         return repository.getUserList();
     };
 
+    @GetMapping("enrollLectures")
+    public List<Lecture> getEnrollLectureList(Long id){
+        return repository.getEnrollLectureList(id);
+    }
+
 }
